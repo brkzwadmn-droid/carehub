@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PlaceholderImage } from "@/components/landing/placeholder-image";
+import Image from "next/image";
 
 type FeatureHeroProps = {
   label: string;
@@ -38,11 +39,8 @@ export function FeatureHero({
             </Link>
           )}
         </div>
-        <PlaceholderImage
-          label={imageLabel}
-          className="min-h-[300px] w-full shadow-xl"
-          aspect="4/3"
-        />
+        {/* Image */}
+        <Image src={`/feature-page/${imageLabel}`} alt={imageLabel} width={1000} height={1000} className="w-full h-full object-cover rounded-2xl" />
       </div>
     </section>
   );

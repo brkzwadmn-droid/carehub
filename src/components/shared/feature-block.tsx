@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PlaceholderImage } from "@/components/landing/placeholder-image";
+import Image from "next/image";
 
 export type FeatureBullet = {
   title: string;
@@ -18,7 +19,7 @@ type FeatureBlockProps = {
   body: string;
   bullets?: FeatureBullet[];
   cta?: string;
-  imageLabel: string;
+  imageLabel: string ;
   imagePosition?: "left" | "right";
   testimonial?: Testimonial;
 };
@@ -40,11 +41,7 @@ export function FeatureBlock({
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           <div className={imageFirst ? "" : "lg:order-2"}>
-            <PlaceholderImage
-              label={imageLabel}
-              className="min-h-[280px] w-full rounded-2xl shadow-lg"
-              aspect="4/3"
-            />
+            <Image src={`/feature-page/${imageLabel}`} alt={imageLabel} width={1000} height={1000} className="w-full h-full object-cover rounded-2xl" />
           </div>
           <div className={imageFirst ? "" : "lg:order-1"}>
             <p className="text-xs font-bold uppercase tracking-widest text-slate-400">

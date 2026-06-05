@@ -22,7 +22,7 @@ export default function EvvPage() {
           label="Electronic Visit Verification"
           title="EVV that Simply Works for HCBS, IDD and Regional Center providers."
           description="ShiftCare Verify gives you fast GPS-verified visit data, without the headaches. EVV checks run automatically, keeping your billing clean and families informed in real time. Automate each step of Electronic Visit Verification with an app carers love, and accurate data for your admins."
-          imageLabel="EVV Hero Dashboard"
+          imageLabel="evv-hero.webp"
         />
 
         <section className="bg-white py-12">
@@ -49,20 +49,11 @@ export default function EvvPage() {
           </div>
         </section>
 
-        <section className="bg-white py-16 lg:py-24">
-          <div className="mx-auto max-w-7xl px-4 lg:px-8">
-            <p className="text-xs font-bold uppercase tracking-widest text-brand-blue">
-              Made for US IDD and Home Care Providers
-            </p>
-            <h2 className="mt-3 max-w-2xl font-serif text-3xl text-brand-navy">
-              Purpose-Built for the for the Way Medicaid Providers Deliver Care
-            </h2>
-          </div>
-        </section>
+        
 
         <FeatureBlock
-          label="Services"
-          title="Services"
+          label="Made for US IDD and Home Care Providers"
+          title="Purpose-Built for the for the Way Medicaid Providers Deliver Care"
           body="ShiftCare Verify offers compliant, audit-ready templates built for US care agencies. Whether you need HCBS billing exports, Regional Center billing files, or IDD billing, you can rest assured that you'll get fewer denials and rejections. Shiftcare helps you manage different funding streams in one simple workflow. Say goodbye to rejected claims or mismatched units. Supporting a range of services:"
           bullets={[
             {
@@ -83,7 +74,7 @@ export default function EvvPage() {
             },
             { title: "Private Duty Non-Medical Care", description: "" },
           ]}
-          imageLabel="EVV Services & Integrations"
+          imageLabel="idd.webp"
           imagePosition="left"
         />
 
@@ -109,7 +100,7 @@ export default function EvvPage() {
             },
           ]}
           cta="Try for free today →"
-          imageLabel="EVV Mobile App"
+          imageLabel="mobile-evv.webp"
           imagePosition="right"
         />
 
@@ -151,7 +142,7 @@ export default function EvvPage() {
             },
           ]}
           cta="Try ShiftCare for free →"
-          imageLabel="EVV Compliance Workflow"
+          imageLabel="compliance.webp"
           imagePosition="left"
         />
 
@@ -169,8 +160,11 @@ export default function EvvPage() {
           </div>
         </section>
 
-        <FeatureBlock
-          label="Billing Exports"
+        
+        {/* Billing Exports without image */}
+        <section className="bg-white py-16 lg:py-24">
+          <div className="mx-auto max-w-3xl px-4 text-center lg:px-8">
+            {/* label="Billing Exports"
           title="Billing Exports That Automatically Align With Funding and State Rules"
           body="ShiftCare Verify prepares the exact file format that your state and funder require, which include the following:"
           bullets={[
@@ -179,10 +173,18 @@ export default function EvvPage() {
             { title: "IDD Billing Templates", description: "" },
             { title: "Private Pay & Mileage Reporting", description: "" },
           ]}
-          cta="Book a demo →"
-          imageLabel="Billing Exports"
-          imagePosition="right"
-        />
+          cta="Book a demo →" */}
+          <h2 className="font-serif text-3xl text-brand-navy">Billing Exports That Automatically Align With Funding and State Rules</h2>
+          <p className="mt-4 leading-relaxed text-slate-600">ShiftCare Verify prepares the exact file format that your state and funder require, which include the following:</p>
+          <ul className="mt-6 space-y-4">
+            <li className="font-semibold text-brand-navy">California Regional Centers (eBilling)</li>
+            <li className="font-semibold text-brand-navy">HCBS Medicaid Waivers (CO, OH, PA, IN)</li>
+            <li className="font-semibold text-brand-navy">IDD Billing Templates</li>
+            <li className="font-semibold text-brand-navy">Private Pay & Mileage Reporting</li>
+          </ul>
+          <Link href="#" className="mt-8 inline-block text-sm font-semibold text-brand-red hover:underline">Book a demo →</Link>
+          </div>
+        </section>
 
         <section className="bg-white py-16 lg:py-24">
           <div className="mx-auto max-w-3xl px-4 text-center lg:px-8">
@@ -261,15 +263,6 @@ export default function EvvPage() {
               Get started today →
             </Link>
             <p className="mt-3 text-sm text-slate-500">No credit card required</p>
-          </div>
-        </section>
-
-        <section className="bg-white py-12">
-          <div className="mx-auto max-w-5xl px-4 lg:px-8">
-            <PlaceholderImage
-              label="EVV Workflow Steps"
-              className="min-h-[200px] w-full"
-            />
           </div>
         </section>
 
