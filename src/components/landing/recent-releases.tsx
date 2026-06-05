@@ -34,11 +34,8 @@ export function RecentReleases() {
           </div>
 
           <div className="space-y-6">
-            <PlaceholderImage
-              label="Recent Releases — Phone Mockup"
-              className="min-h-[240px] w-full"
-              aspect="4/3"
-            />
+            {/* Video of the recent releases */}
+            <video src="/recent-release/recent-release.webm" className="w-full h-full object-cover rounded-xl" autoPlay muted loop playsInline />
             <div className="rounded-xl border border-slate-100 bg-white p-6 shadow-sm">
               <span className="text-3xl font-serif text-brand-red">&ldquo;</span>
               <p className="leading-relaxed text-slate-600">
