@@ -3,7 +3,7 @@ import { ctaStats } from "./data";
 
 export function CtaBanner() {
   return (
-    <section className="relative bg-brand-purple pb-32 pt-20 lg:pb-40 lg:pt-28">
+    <section className="relative bg-linear-to-b from-brand-blue to-brand-indigo pb-32 pt-20 lg:pb-40 lg:pt-28">
       <div className="mx-auto max-w-4xl px-4 text-center lg:px-8">
         <h2 className="font-serif text-3xl text-white sm:text-4xl lg:text-5xl">
           Start your free 7 day trial.

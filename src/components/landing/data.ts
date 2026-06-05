@@ -223,28 +223,28 @@ export const testimonials = [
 ];
 
 export const awards = [
-  "Software Advice Frontrunners 2026",
-  "Capterra Shortlist 2026",
-  "GetApp Category Leaders",
-  "Capterra Best ease of use Award",
-  "G2 Best ROI Award",
+  "software-advice-frontrunners-2026.svg",
+  "capterra-shortlist-2026.svg",
+  "GetApp-Category-Leaders-2025.svg",
+  "ca-ease_of_use-2024.webp",
+  "g2-best-roi-award.webp",
 ];
 
 export const articles = [
   {
     title: "How To Digitize Your Home Care Agency For Greater Efficiency",
     tags: "Efficiency, Health, Home Care, Scheduling, Software, Technology, United States",
-    imageLabel: "Digitize Home Care Agency",
+    imageLabel: "insight-01.webp",
   },
   {
     title: "The Top Workflow Tools For Digital Businesses",
     tags: "Efficiency, Marketing, Small Business, Software, United States",
-    imageLabel: "Workflow Tools",
+    imageLabel: "insight-02.webp",
   },
   {
     title: "The Best Home Care CRM Software: Features You Should Look For",
     tags: "Care Management, Compilance, Efficiency, Guides, Software, United States",
-    imageLabel: "Home Care CRM",
+    imageLabel: "insight-03.webp",
   },
 ];
 

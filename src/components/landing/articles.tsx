@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { articles } from "./data";
 import { PlaceholderImage } from "./placeholder-image";
 
@@ -12,10 +13,7 @@ export function Articles() {
         <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {articles.map((article) => (
             <article key={article.title}>
-              <PlaceholderImage
-                label={article.imageLabel}
-                className="h-52 w-full rounded-xl"
-              />
+              <Image src={`/insight/${article.imageLabel}`} alt={article.imageLabel} width={1000} height={1000} className="w-full h-44 object-cover rounded-2xl" />
               <p className="mt-4 text-[10px] font-medium uppercase tracking-wide text-slate-400">
                 {article.tags}
               </p>
