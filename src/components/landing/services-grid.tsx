@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { productFeatures } from "./data";
 import { PlaceholderImage } from "./placeholder-image";
+import Image from "next/image";
 
 export function ServicesGrid() {
   return (
@@ -15,11 +16,7 @@ export function ServicesGrid() {
               className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16"
             >
               <div className={imageFirst ? "" : "lg:order-2"}>
-                <PlaceholderImage
-                  label={feature.imageLabel}
-                  className="min-h-[280px] w-full rounded-2xl shadow-lg"
-                  aspect="4/3"
-                />
+                <Image src={`/new-NA-images/${feature.imageLabel}`} alt={feature.imageLabel} width={1000} height={1000} className="min-h-[280px] w-full" />
               </div>
               <div className={imageFirst ? "" : "lg:order-1"}>
                 <p className="text-xs font-bold uppercase tracking-widest text-slate-400">
@@ -42,8 +39,10 @@ export function ServicesGrid() {
                       <p className="font-semibold text-brand-navy">
                         Download on the App Store — 4.8 ★★★★★
                       </p>
+                      {/* google play bage  */}
+                      <Image src="/GooglePlay.png" alt="Google Play" width={100} height={100} />
                       <p className="font-semibold text-brand-navy">
-                        Get it on Google Play — 4.8 ★★★★★
+                        4.8 ★★★★★
                       </p>
                     </div>
                   </div>

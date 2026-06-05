@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { aiFeatures } from "./data";
 import { PlaceholderImage } from "./placeholder-image";
+import Image from "next/image";
 
 export function AiFeatures() {
   return (
@@ -23,10 +24,8 @@ export function AiFeatures() {
               key={feature.tag}
               className="overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm"
             >
-              <PlaceholderImage
-                label={feature.imageLabel}
-                className="h-44 w-full rounded-none"
-              />
+              {/* from the public folder ai-comp folder */}
+              <Image src={`/ai-comp/${feature.imageLabel}`} alt={feature.imageLabel} width={1000} height={1000} className="object-cover" />
               <div className="p-5">
                 <span
                   className={`inline-block rounded-md px-2 py-1 text-[10px] font-bold uppercase tracking-wider ${feature.badgeColor}`}

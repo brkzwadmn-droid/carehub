@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { solutions } from "./data";
 import { PlaceholderImage } from "./placeholder-image";
+import Image from "next/image";
 
 export function SolutionsGrid() {
   return (
@@ -13,11 +14,7 @@ export function SolutionsGrid() {
         <div className="mt-14 grid gap-10 sm:grid-cols-2">
           {solutions.map((solution) => (
             <article key={solution.title} className="flex gap-5">
-              <PlaceholderImage
-                label={solution.imageLabel}
-                className="h-24 w-24 shrink-0"
-                rounded="full"
-              />
+              <Image src={`/solution-profile/${solution.imageLabel}`} alt={solution.imageLabel} width={1000} height={1000} className="w-32 h-32 object-cover rounded-full" />
               <div>
                 <h3 className="font-serif text-xl font-bold text-brand-navy">
                   {solution.title}

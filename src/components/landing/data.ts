@@ -45,7 +45,7 @@ export const aiFeatures = [
     title: "Talk. AI writes the notes.",
     description:
       "Support workers speak into their phone after a shift. AI converts it into structured, compliant summaries—flagging incidents and follow-ups automatically. Less admin. Better visibility. No rework.",
-    imageLabel: "Voice to Text",
+    imageLabel: "ai-comps-01.webp",
   },
   {
     tag: "SMARTMATCH",
@@ -53,7 +53,7 @@ export const aiFeatures = [
     title: "Post a shift. AI fills it.",
     description:
       "SmartMatch instantly identifies qualified, available, compliant, and cost-appropriate workers for every shift. No manual chasing. No over-messaging. Just the right person, every time.",
-    imageLabel: "SmartMatch",
+    imageLabel: "ai-comps-02.webp",
   },
   {
     tag: "SHIFT RECOVERY",
@@ -61,7 +61,7 @@ export const aiFeatures = [
     title: "2am cancellation? AI handles it.",
     description:
       "When a shift cancels, ShiftCare doesn't wait for humans. AI instantly finds, invites, and allocates the best available worker — based on skills, location, availability, and cost. Day or night.",
-    imageLabel: "Shift Recovery",
+    imageLabel: "ai-comps-03.webp",
   },
   {
     tag: "WORKFORCE INTELLIGENCE",
@@ -69,7 +69,7 @@ export const aiFeatures = [
     title: "Your rules. Applied every time.",
     description:
       "SmartMatch uses real delivery signals and your configured rules to surface the best-fit worker for every shift. Transparent, controllable intelligence – not a black box. Built for regulated care.",
-    imageLabel: "Workforce Intelligence",
+    imageLabel: "ai-comps-04.webp",
   },
 ];
 
@@ -80,7 +80,7 @@ export const productFeatures = [
     description:
       "ShiftCare's care management features make it easier for you and your caregivers to deliver highly personalized support to clients and their families.",
     linkText: "Learn more about Home Care →",
-    imageLabel: "Home Care",
+    imageLabel: "new-NA-images-01.webp",
     imagePosition: "right" as const,
   },
   {
@@ -90,7 +90,7 @@ export const productFeatures = [
       "Upload care plans and other important documents in moments and share with your teams on the go. With shift details instantly relayed, you'll have less inbound calls and more certainty over team availability.",
     linkText: "Learn more about Care Management →",
     href: "/features/care-management",
-    imageLabel: "Care Management",
+    imageLabel: "new-NA-images-02.webp",
     imagePosition: "left" as const,
   },
   {
@@ -99,7 +99,7 @@ export const productFeatures = [
     description:
       "We've made planning and organizing teams and scheduling shifts easy, helping you deliver a more effective, efficient service. Instantly provide caregivers with important information.",
     linkText: "Learn more about Scheduling →",
-    imageLabel: "Scheduling",
+    imageLabel: "new-NA-images-03.webp",
     imagePosition: "right" as const,
   },
   {
@@ -108,7 +108,7 @@ export const productFeatures = [
     description:
       "We connect you and your caregivers with all you need to manage shifts, coordinate clients, and deliver quality home care wherever they are.",
     linkText: "Learn how the ShiftCare App works →",
-    imageLabel: "Caregiver App",
+    imageLabel: "new-NA-images-04.webp",
     imagePosition: "left" as const,
     showAppStores: true,
   },
@@ -118,7 +118,7 @@ export const productFeatures = [
     description:
       "Discover how ShiftCare's Human Resources tools simplify staff management with time tracking, communication, compliance, and more – all in one place.",
     linkText: "Learn more about Human Resources →",
-    imageLabel: "Human Resources",
+    imageLabel: "new-NA-images-05.webp",
     imagePosition: "right" as const,
   },
 ];
@@ -129,28 +129,28 @@ export const solutions = [
     description:
       "Improve communication with staff, residents and their families, and deliver a higher standard of care.",
     linkText: "Learn more →",
-    imageLabel: "Assisted Living",
+    imageLabel: "solution-profile-01.webp",
   },
   {
     title: "Home Health Care",
     description:
       "Effortless shift scheduling, seamless staff communication, and enhanced care documentation.",
     linkText: "Learn more →",
-    imageLabel: "Home Health Care",
+    imageLabel: "solution-profile-02.webp",
   },
   {
     title: "Regional Center Providers",
     description:
       "Tailored solutions for regional center providers to enhance coordination, improve incident management, and simplify custom forms, time & attendance, and care notes.",
     linkText: "Learn more →",
-    imageLabel: "Regional Center Providers",
+    imageLabel: "solution-profile-03.webp",
   },
   {
     title: "Home Care",
     description:
       "Shift scheduling made easy, streamlined staff communication and improved care documentation",
     linkText: "Learn more →",
-    imageLabel: "Home Care Solution",
+    imageLabel: "solution-profile-04.webp",
   },
 ];
 
@@ -164,11 +164,12 @@ export const customerSuccess = {
     "We were desperate for a solution that was tailored to meet our needs. It needed to be intuitive, mobile and come with a responsive help desk. We found ShiftCare and loved the interface. From there, the rest is history",
   author: "Sue Pullar",
   role: "Owner, Sue's Home Care Nursing",
-  imageLabel: "Sue Pullar Story",
+  imageLabel: "Sue-01.webp",
+  
   ceo: {
     name: "Mathew Cagney",
     role: "CEO",
-    imageLabel: "Mathew Cagney",
+    imageLabel: "ceo.webp",
     quote:
       "Our customers are at the heart of ShiftCare's evolution. Every feature we develop is a direct response to your feedback, helping us build a platform that truly supports your needs.",
   },

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { customerSuccess } from "./data";
 import { PlaceholderImage } from "./placeholder-image";
+import Image from "next/image";
 
 export function RecentReleases() {
   return (
@@ -44,11 +45,8 @@ export function RecentReleases() {
                 {customerSuccess.ceo.quote}
               </p>
               <div className="mt-4 flex items-center gap-3">
-                <PlaceholderImage
-                  label={customerSuccess.ceo.imageLabel}
-                  className="h-12 w-12"
-                  rounded="full"
-                />
+                {/* Image of  */}
+                <Image src={`/recent-release/${customerSuccess.ceo.imageLabel}`} alt={customerSuccess.ceo.imageLabel} width={1000} height={1000} className="w-12 h-12 object-cover rounded-full" />
                 <div>
                   <p className="font-bold text-brand-blue">
                     {customerSuccess.ceo.name}

@@ -1,17 +1,14 @@
 import Link from "next/link";
 import { customerSuccess } from "./data";
 import { PlaceholderImage } from "./placeholder-image";
+import Image from "next/image";
 
 export function CustomerSuccess() {
   return (
     <section id="about" className="bg-slate-50 py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-          <PlaceholderImage
-            label={customerSuccess.imageLabel}
-            className="min-h-[320px] w-full rounded-2xl shadow-lg"
-            aspect="4/3"
-          />
+          <Image src={`/customer-success/${customerSuccess.imageLabel}`} alt={customerSuccess.imageLabel} width={1000} height={1000} className="min-h-[320px] w-full rounded-2xl shadow-lg" />
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-slate-400">
               {customerSuccess.heading}
@@ -32,11 +29,7 @@ export function CustomerSuccess() {
               {customerSuccess.quote}
             </p>
             <footer className="mt-6 flex items-center gap-3">
-              <PlaceholderImage
-                label="Sue Pullar"
-                className="h-12 w-12"
-                rounded="full"
-              />
+              <Image src={`/customer-success/${customerSuccess.imageLabel}`} alt={customerSuccess.imageLabel} width={1000} height={1000} className="w-12 h-12 object-cover rounded-full" />
               <div>
                 <p className="font-bold text-brand-navy">
                   {customerSuccess.author}
