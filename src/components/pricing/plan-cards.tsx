@@ -80,25 +80,25 @@ export function PlanCards() {
                 key={plan.id}
                 className={`flex flex-col overflow-hidden rounded-2xl border bg-white shadow-sm ${
                   plan.highlighted
-                    ? "border-brand-purple ring-2 ring-brand-purple"
+                    ? "border-brand-purple ring-1 ring-brand-purple"
                     : "border-slate-100"
                 }`}
               >
                 {plan.highlighted && (
-                  <div className="bg-brand-purple py-2 text-center text-xs font-bold uppercase tracking-widest text-white">
+                  <div className="bg-brand-red py-2 text-center text-xs font-bold uppercase tracking-widest text-white">
                     Most Popular
                   </div>
                 )}
 
                 <div
                   className={`flex flex-1 flex-col p-6 ${
-                    plan.highlighted ? "bg-brand-purple text-white" : ""
+                    plan.highlighted ? "bg-brand-blue text-white" : ""
                   }`}
                 >
                   <h3 className="font-serif text-2xl">{plan.name}</h3>
                   <p
                     className={`mt-2 text-sm leading-relaxed ${
-                      plan.highlighted ? "text-purple-100" : "text-slate-600"
+                      plan.highlighted ? "text-white" : "text-slate-600"
                     }`}
                   >
                     {plan.description}

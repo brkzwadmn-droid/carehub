@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { teamMembers } from "./data";
 import { PlaceholderImage } from "@/components/landing/placeholder-image";
 
@@ -19,12 +20,8 @@ export function AboutTeam() {
 
         <div className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {teamMembers.slice(0, 4).map((member) => (
-            <div key={member.name} className="text-center">
-              <PlaceholderImage
-                label={member.name}
-                className="mx-auto h-28 w-28"
-                rounded="full"
-              />
+            <div key={member.name} className="text-center mx-auto flex flex-col items-center">
+              <Image src={`/about-page/${member.imageLabel}`} alt={member.name} width={1000} height={1000} className="w-28 h-28 object-cover rounded-full" />
               <p className="mt-4 font-bold text-brand-navy">{member.name}</p>
               <p className="mt-1 text-sm text-slate-500">{member.role}</p>
             </div>
@@ -33,12 +30,8 @@ export function AboutTeam() {
 
         <div className="mt-10 grid gap-10 sm:grid-cols-3 lg:mx-auto lg:max-w-3xl">
           {teamMembers.slice(4).map((member) => (
-            <div key={member.name} className="text-center">
-              <PlaceholderImage
-                label={member.name}
-                className="mx-auto h-28 w-28"
-                rounded="full"
-              />
+            <div key={member.name} className="text-center mx-auto flex flex-col items-center">
+              <Image src={`/about-page/${member.imageLabel}`} alt={member.name} width={1000} height={1000} className="w-28 h-28 object-cover rounded-full" />
               <p className="mt-4 font-bold text-brand-navy">{member.name}</p>
               <p className="mt-1 text-sm text-slate-500">{member.role}</p>
             </div>

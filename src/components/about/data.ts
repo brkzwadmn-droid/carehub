@@ -30,11 +30,11 @@ export const aboutValues = [
 ];
 
 export const teamMembers = [
-  { name: "Mathew Cagney", role: "CEO" },
-  { name: "Miguel Molina", role: "Chief Technology Officer" },
-  { name: "Andrew Lee", role: "Head Of Operations" },
-  { name: "Mark Henderson", role: "Sales Director, Outbound" },
-  { name: "Jordan King", role: "Sales Director, Inbound" },
-  { name: "Brendan Kyle", role: "Head of Marketing" },
-  { name: "Rachael Roche", role: "VP of Sales, NA" },
+  { name: "Mathew Cagney", role: "CEO", imageLabel: "team-01.webp" },
+  { name: "Miguel Molina", role: "Chief Technology Officer", imageLabel: "team-02.webp" },
+  { name: "Andrew Lee", role: "Head Of Operations", imageLabel: "team-03.webp" },
+  { name: "Mark Henderson", role: "Sales Director, Outbound", imageLabel: "team-04.webp" },
+  { name: "Jordan King", role: "Sales Director, Inbound", imageLabel: "team-05.webp" },
+  { name: "Brendan Kyle", role: "Head of Marketing", imageLabel: "team-06.webp" },
+  { name: "Rachael Roche", role: "VP of Sales, NA", imageLabel: "team-07.webp" },
 ];

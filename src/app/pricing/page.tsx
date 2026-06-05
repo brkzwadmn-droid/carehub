@@ -7,6 +7,7 @@ import { pricingFaqs } from "@/components/pricing/data";
 import { FaqSection } from "@/components/shared/faq-section";
 import Link from "next/link";
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Pricing — ShiftCare",
@@ -58,14 +59,8 @@ export default function PricingPage() {
 
         <section className="py-16 lg:py-24">
           <div className="mx-auto grid max-w-5xl items-center gap-12 px-4 lg:grid-cols-2 lg:px-8">
-            <div
-              className="hidden h-48 rounded-2xl bg-slate-100 lg:block"
-              style={{
-                backgroundImage:
-                  "radial-gradient(circle, #cbd5e1 1.5px, transparent 1.5px)",
-                backgroundSize: "16px 16px",
-              }}
-            />
+            
+            <Image src="/price-page/us-pricing.webp" alt="Onboarding Packages" width={1000} height={1000} className="w-full h-full object-cover rounded-2xl" />
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-slate-400">
                 For a smooth transition
